@@ -1,0 +1,83 @@
+/* Header Styles */
+  
+.header {
+    background: linear-gradient(-30deg, #4f38a4, #a244bc 45%, #4f38a4 45%) #4f38a4;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #ccc;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablet and above */
+  @media (min-width: 1500px) {
+    .header {
+      /* padding: 2em; */
+    }
+    .nav {
+      justify-content: flex-end;
+    }
+    .logo {
+      margin-right: 40px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 1500px) {
+    .header {
+      /* padding: 1em; */
+    }
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav li {
+      margin-right: 0;
+    }
+    .nav a {
+      font-size: 16px;
+    }
+    .logo {
+      margin-right: 10px;
+    }
+  }
