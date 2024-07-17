@@ -1,0 +1,96 @@
+<div class="main-container">
+    <button pButton pRipple label="Add New" (click)="showDialog()" class="p-button-success float-right">
+    </button>
+
+    <!-- <h3>Student Registration</h3> -->
+
+    <p-dialog header="Student Registration" [(visible)]="visible" [modal]="true" [draggable]="false" [resizable]="false"
+        [transitionOptions]="'0ms'" position="topright" [style]="{width: '60vw'}">
+        <form name="form">
+            <div class="form-group row">
+                <div class="col-lg-3 p-field">
+                    <label class="labelfont">Student Code <span class="text-danger">*</span></label>
+                    <input pInputText class="form-control text-uppercase shadow-none" type="text" autocomplete="off">
+                </div>
+                <div class="col-lg-3 p-field">
+                    <label class="labelfont">Student Name <span class="text-danger">*</span></label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+                <div class="col-lg-3 p-field">
+                    <label class="labelfont">Date Of Birth</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+                <div class="col-lg-3 p-field">
+                    <label class="labelfont">Gender</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">E-mail<span class="text-danger">*</span></label>
+                    <input pInputText class="form-control text-uppercase shadow-none" maxlength="5" type="text" autocomplete="off">
+                </div>
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Contact<span class="text-danger">*</span></label>
+                    <input pInputText class="form-control shadow-none" maxlength="50" type="text" autocomplete="off">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Address</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Parent Name</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Class<span class="text-danger">*</span></label> <br>
+                    <p-dropdown [options]="classOptions" optionLabel="key" optionValue="key" name="accrualOn" id="accrualOn">
+                    </p-dropdown>
+                    <!-- <input pInputText class="form-control text-uppercase shadow-none" maxlength="5" type="text" autocomplete="off"> -->
+                </div>
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Section<span class="text-danger">*</span></label>
+                    <p-dropdown [options]="sectionOptions" optionLabel="key" optionValue="key" name="accrualOn1" id="accrualOn1">
+                    </p-dropdown>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Roll No</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Transport</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Hostel</label>
+                    <p-dropdown [options]="hostelOptions" optionLabel="key" optionValue="key" name="hostelId" id="hostelId">
+                    </p-dropdown>
+                </div>
+
+                <div class="col-lg-6 p-field">
+                    <label class="labelfont">Profile Picture</label>
+                    <input pInputText class="form-control shadow-none" type="text" autocomplete="off">
+                </div>
+            </div>
+
+
+            <div class="float-right mt-4">
+                <p-button label="Submit" icon="pi pi-check"></p-button>
+            </div>
+        </form>
+    </p-dialog>
+</div>

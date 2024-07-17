@@ -1,0 +1,30 @@
+.main-container
+{
+  padding: 0;
+  margin-left:-200px;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+p-dialog{
+  margin-top: -50px;
+}
+
+
+.p-dropdown {
+  display: inline-flex;
+  position: relative;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+.labelfont{
+  font-size: 15px;
+}
+
+.p-button-success{
+  margin-right: 20px;
+  color: #fff;
+}
