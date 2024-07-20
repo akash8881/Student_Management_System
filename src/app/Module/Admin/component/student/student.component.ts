@@ -31,6 +31,7 @@ export class StudentComponent {
   }
 
   showDialog(){
+    this.visible=true;
     this.studentregistrationService.fetchPaymentDetails().subscribe(res=>{
       this.rawData=res;
       console.log('rawData',this.rawData);
